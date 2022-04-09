@@ -1,6 +1,6 @@
 img {
     position: absolute;
-    top: 35vh;
+    top: 15vh;
     left: 27.5vw;
     border-radius: 50px;
     max-width: 20vw;
@@ -100,3 +100,25 @@ body {
 }
 
 
+/* Africa */
+
+.africa-img-hover-zoom--brightness {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Brightness-zoom Container */
+.africa-img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+    left: 77.5vw;
+    top: 45vh;
+}
+  
+  /* The Transformation */
+.africa-img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(0.95);
+}

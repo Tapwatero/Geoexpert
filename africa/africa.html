@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/Geoexpert/css/africaStyles.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>World Map Example</title>
+    <script src="africaMapData.js"></script>
+    <script src="africaMap.js"></script>
+    <script src="/Geoexpert/scoreManager.js" defer></script>
+    <script src="/Geoexpert/isCorrect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="/Geoexpert/confetti.js"></script>
+ </head>
+  </head>
+  <body>
+    <label id="score" for="query">0/18</label>
+    <input maxlength=24 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, simplemaps_worldmap_mapdata['regions'][4]['states'], simplemaps_worldmap_mapdata, 'world', false, 'africaScore', 49)" autofocus>
+    <div id="map"></div>
+	</body>
+</html>
+      
+    
+
