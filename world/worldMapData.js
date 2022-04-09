@@ -296,7 +296,7 @@ var simplemaps_worldmap_mapdata={
       name: "Georgia"
     },
     GF: {
-      name: "France"
+      name: "French Guyana"
     },
     GH: {
       name: "Ghana"
@@ -350,7 +350,7 @@ var simplemaps_worldmap_mapdata={
       name: "Hungary"
     },
     IC: {
-      name: "Canary Islands (Spain)"
+      name: "Canary Islands"
     },
     ID: {
       name: "Indonesia"
@@ -488,7 +488,7 @@ var simplemaps_worldmap_mapdata={
       name: "Northern Mariana Islands"
     },
     MQ: {
-      name: "Martinique (France)"
+      name: "Martinique"
     },
     MR: {
       name: "Mauritania"
@@ -590,7 +590,7 @@ var simplemaps_worldmap_mapdata={
       name: "Qatar"
     },
     RE: {
-      name: "Reunion (France)"
+      name: "Reunion"
     },
     RO: {
       name: "Romania"
@@ -650,7 +650,7 @@ var simplemaps_worldmap_mapdata={
       name: "El Salvador"
     },
     SX: {
-      name: "Saint Martin (Dutch)"
+      name: "Saint Martin"
     },
     SY: {
       name: "Syria"
@@ -743,7 +743,7 @@ var simplemaps_worldmap_mapdata={
       name: "Yemen"
     },
     YT: {
-      name: "Mayotte (France)"
+      name: "Mayotte"
     },
     ZA: {
       name: "South Africa"
