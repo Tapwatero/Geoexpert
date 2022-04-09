@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/Geoexpert/css/worldStyles.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>World Map</title>
+    <script src="worldMapData.js"></script>
+    <script src="worldMap.js"></script>
+    <script src="/Geoexpert/scoreManager.js" defer></script>
+    <script src="/Geoexpert/isCorrect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="/Geoexpert/confetti.js"></script>
+ </head>
+  </head>
+  <body>
+    <label id="score" for="query">0/206</label>
+    <input maxlength=30 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, Object.keys(simplemaps_worldmap_mapdata['state_specific']), simplemaps_worldmap_mapdata, 'world', false, 'worldScore', 206)" autofocus>
+    <div id="map"></div>
+	</body>
+</html>
+      
+    
+

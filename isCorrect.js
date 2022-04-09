@@ -14,6 +14,9 @@ function reload(reloadPointer) {
     case "america":
       simplemaps_usmap.load();
       break
+    case "united kingdom":
+      simplemaps_ukmap.load();
+      break
   }
 }
 
