@@ -5694,8 +5694,8 @@ var simplemaps_worldmap_mapinfo = {
             }
 
             function go() {
-                var e, o, i = _.navigation_color ? _.navigation_color : "#f7f7f7",
-                    n = _.navigation_border_color ? _.navigation_border_color : "#636363",
+                var e, o, i = _.navigation_color ? _.navigation_color : "#097696",
+                    n = _.navigation_border_color ? _.navigation_border_color : "white",
                     a = _.navigation_opacity ? _.navigation_opacity : .8,
                     r = _.arrow_color ? _.arrow_color : i,
                     s = _.arrow_color_border ? _.arrow_color_border : n,
@@ -5731,14 +5731,14 @@ var simplemaps_worldmap_mapinfo = {
                                     "stroke-width": 1,
                                     stroke: l,
                                     "stroke-opacity": h,
-                                    "fill-opacity": 0,
+                                    "fill-opacity": 1,
                                     cursor: "pointer"
                                 }),
                                 b = {
                                     stroke: l,
                                     "stroke-width": 1.5,
                                     "stroke-opacity": 1,
-                                    fill: r,
+                                    fill: "white",
                                     "fill-opacity": 1,
                                     cursor: "pointer"
                                 },

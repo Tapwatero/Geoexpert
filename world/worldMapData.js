@@ -47,8 +47,8 @@ var simplemaps_worldmap_mapdata={
     region_opacity: 1,
     region_hover_opacity: 0.6,
     zoom_out_incrementally: "yes",
-    zoom_percentage: 0.99,
-    zoom_time: 0.5,
+    zoom_percentage: 1,
+    zoom_time: 0.25,
     
     //Popup settings
     popup_color: "white",
