@@ -39,7 +39,7 @@ var simplemaps_worldmap_mapdata={
     hide_labels: "no",
    
     //Zoom settings
-    zoom: "no",
+    zoom: "yes",
     back_image: "no",
     initial_back: "no",
     initial_zoom: -1,
