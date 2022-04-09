@@ -6,17 +6,15 @@ function reload(reloadPointer) {
   switch (reloadPointer)
   {
     case "world":
-      simplemaps_worldmap.load();
+      simplemaps_worldmap.refresh();
       break
     case "europe":
-      simplemaps_europemap.load();
+      simplemaps_europemap.refresh();
       break
     case "america":
-      simplemaps_usmap.load();
+      simplemaps_usmap.refresh();
       break
-    case "united kingdom":
-      simplemaps_ukmap.load();
-      break
+
   }
 }
 
