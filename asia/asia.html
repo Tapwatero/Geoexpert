@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/asiaStyles.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>World Map Example</title>
+    <script src="asiaMapData.js"></script>
+    <script src="asiaMap.js"></script>
+    <script src="/Geoexpert/scoreManager.js" defer></script>
+    <script src="/Geoexpert/isCorrect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="/Geoexpert/confetti.js"></script>
+ </head>
+  </head>
+  <body>
+    <label id="score" for="query">0/18</label>
+    <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, simplemaps_worldmap_mapdata['regions'][6]['states'], simplemaps_worldmap_mapdata, 'world', true, 'asianScore', 18)" autofocus>
+    <div>
+      <div style="max-width: 1500px">
+         <div id="map"></div>
+      </div>
+	</body>
+</html>
+      
+    
+

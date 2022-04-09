@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/Geoexpert/css/southAmericaStyles.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>South America Map</title>
+    <script src="southAmericaMapData.js"></script>
+    <script src="southAmericaMap.js"></script>
+    <script src="/Geoexpert/scoreManager.js" defer></script>
+    <script src="/Geoexpert/isCorrect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="/Geoexpert/confetti.js"></script>
+  </head>
+  <body>
+    <label id="score" for="query">0/13</label>
+    <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, simplemaps_worldmap_mapdata['regions'][1]['states'], simplemaps_worldmap_mapdata, 'world', false, 'southAmericanScore', 13)" autofocus>
+      <div id="map"></div>
+	</body>
+</html>
+      
+    
+

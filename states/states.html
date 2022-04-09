@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="/Geoexpert/css/stateStyles.css">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <title>State Map</title>
+      <script src="stateMapData.js"></script>
+      <script src="stateMap.js"></script>
+      <script src="/Geoexpert/scoreManager.js" defer></script>
+      <script src="/Geoexpert/isCorrect.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+      <script src="/Geoexpert/confetti.js"></script>
+   </head>
+   <body>
+   <label id="score" for="query">0/50</label>
+   <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, Object.keys(simplemaps_usmap_mapdata['state_specific']), simplemaps_usmap_mapdata, 'america', true, 'statesScore', 50)" autofocus>
+   <div>
+         <div style="max-width: 700px">
+            <div id="map"></div>
+         </div>		 
+      </div>
+      <ul id="states">
+      </ul>
+   </body>
+</html>

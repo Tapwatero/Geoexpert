@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/Geoexpert/css/europeStyles.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Europe Map</title>
+    <script src="europeMapData.js"></script>
+    <script src="europeMap.js"></script>
+    <script src="/scoreManager.js" defer></script>
+    <script src="/isCorrect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="/confetti.js"></script>
+  </head>
+  <body>
+    <label id="score" for="query">0/42</label>
+    <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, Object.keys(simplemaps_europemap_mapdata['state_specific']), simplemaps_europemap_mapdata, 'europe', false, 'europeScore', 42)" autofocus>
+    <div id="map"></div>
+	</body>
+</html>
+      
+    
+

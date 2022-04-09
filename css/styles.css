@@ -1,0 +1,102 @@
+img {
+    position: absolute;
+    top: 35vh;
+    left: 27.5vw;
+    border-radius: 50px;
+    max-width: 20vw;
+}
+
+body {
+    background: #fc00ff;
+    background: linear-gradient(90deg, #004FF9 0%, #FFF94C 100%);
+}
+
+/* States */
+
+.states-img-hover-zoom--brightness {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Brightness-zoom Container */
+.states-img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+}
+  
+  /* The Transformation */
+.states-img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(0.95);
+}
+
+/* Europe */
+
+.europe-img-hover-zoom--brightness {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Brightness-zoom Container */
+.europe-img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+    left: 2.5vw;
+}
+  
+  /* The Transformation */
+.europe-img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(0.95);
+}
+
+/* Asia */
+
+.asia-img-hover-zoom--brightness {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Brightness-zoom Container */
+.asia-img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+    left: 52.5vw;
+}
+  
+  /* The Transformation */
+.asia-img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(0.95);
+}
+
+
+/* South America */
+
+.south-america-img-hover-zoom--brightness {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Brightness-zoom Container */
+.south-america-img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+    left: 77.5vw;
+}
+  
+  /* The Transformation */
+.south-america-img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(0.95);
+}
+
+
