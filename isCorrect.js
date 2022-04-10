@@ -20,9 +20,12 @@ function reload(reloadPointer) {
 
 function isCorrect(q, correct_countries, map, reloadPointer, labels, s, maxScore) {
   const states = new Map();
+  console.log(correct_countries);
 
   document.getElementById("query").value = "";
-  for (let i = 0; i < correct_countries.length; i++) {states.set(map['state_specific'][correct_countries[i]]['name'].toLowerCase(), correct_countries[i])}
+  for (let i = 0; i < correct_countries.length; i++) {
+    states.set(map['state_specific'][correct_countries[i]]['name'].toLowerCase(), correct_countries[i]);
+  }
   if (states.has(q.toLowerCase()) && map['state_specific'][states.get(q.toLowerCase())]['color'] != "#097696")
   {
     map['state_specific'][states.get(q.toLowerCase())]['color'] = "#097696";

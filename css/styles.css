@@ -145,3 +145,26 @@ body {
     filter: brightness(100%);
     transform: scale(0.95);
 }
+
+/* Middle East */
+
+.middle-east-img-hover-zoom--brightness {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Brightness-zoom Container */
+.middle-east-img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+    left:  27.5vw;
+    top: 45vh;
+}
+  
+  /* The Transformation */
+.middle-east-img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(0.95);
+}
