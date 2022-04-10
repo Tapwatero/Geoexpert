@@ -14,13 +14,14 @@ function reload(reloadPointer) {
     case "america":
       simplemaps_usmap.refresh();
       break
-
+    case "caribbean":
+      simplemaps_caribbeanmap.refresh();  
+      break
   }
 }
 
 function isCorrect(q, correct_countries, map, reloadPointer, labels, s, maxScore) {
   const states = new Map();
-  console.log(correct_countries);
 
   document.getElementById("query").value = "";
   for (let i = 0; i < correct_countries.length; i++) {

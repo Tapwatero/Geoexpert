@@ -168,3 +168,27 @@ body {
     filter: brightness(100%);
     transform: scale(0.95);
 }
+
+/* Caribbean  */
+
+
+.caribbean-img-hover-zoom--brightness {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Brightness-zoom Container */
+.caribbean-img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+    left: 2.5vw;
+    top: 45vh;
+}
+  
+  /* The Transformation */
+.caribbean-img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(0.95);
+}
