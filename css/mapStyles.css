@@ -27,8 +27,7 @@ lord-icon
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255);
     border: none;
-    width: 50%;
-    max-width: fit-content;
+    width: 25%;
     border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
     text-align: center;
