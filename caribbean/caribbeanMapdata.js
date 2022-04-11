@@ -1,7 +1,7 @@
 var simplemaps_caribbeanmap_mapdata={
   main_settings: {
    //General settings
-    width: "1000", //'700' or 'responsive'
+    width: 'responsive', //'700' or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
     popups: "detect",

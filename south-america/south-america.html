@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/Geoexpert/css/southAmericaStyles.css">
+    <link rel="stylesheet" href="/Geoexpert/css/mapStyles.css">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>South America Map</title>
     <script src="southAmericaMapData.js"></script>
@@ -13,16 +13,18 @@
   </head>
   <body>
     <a href="/Geoexpert/index.html"><script src="https://cdn.lordicon.com/lusqsztk.js"></script>
-      <lord-icon
-          src="https://cdn.lordicon.com/eflfmgmj.json"
-          trigger="loop-on-hover"
-          delay="50"
-          colors="primary:#F5F5F5">
-      </lord-icon></a>
-    <label id="score" for="query">0/13</label>
-    <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, simplemaps_worldmap_mapdata['regions'][1]['states'], simplemaps_worldmap_mapdata, 'world', false, 'southAmericanScore', 13)" autofocus>
-      <div id="map"></div>
-	</body>
+    <lord-icon
+           src="https://cdn.lordicon.com/eflfmgmj.json"
+           trigger="loop-on-hover"
+           delay="50"
+           colors="primary:#F5F5F5">
+    </lord-icon></a>
+    <label id="score" for="query">0/50</label>
+    <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, Object.keys(simplemaps_usmap_mapdata['state_specific']), simplemaps_usmap_mapdata, 'america', true, 'statesScore', 50)" autofocus>
+    <div id="container">
+       <div id="map"></div>
+    </div>
+    </body>
 </html>
       
     

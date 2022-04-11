@@ -1,44 +1,45 @@
 lord-icon
 {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 15vw;
+    height: 15vh;
+    max-width: 40px;
+    max-height: 40px;
     transform: rotate(-90deg);
 }
 
-
-#map {
-    display: flex;
+#container {
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    height: 85%;
-    left: 17.5%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #query {
     position: absolute;
-    left: 37.5%;
     bottom: 10%;
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    font-size: 1.2rem;
-    margin: 0 auto;
     padding: 0.5rem 2rem;
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255);
     border: none;
-    width: 27%;
-    display: block;
+    width: 50%;
+    max-width: fit-content;
     border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
     text-align: center;
     background: transparent;
-    font-size: 2em;
+    font-size: 175%;
     border-bottom: 2px solid whitesmoke;
     color: whitesmoke;
     outline: none;
     height: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 body {
@@ -58,11 +59,15 @@ body {
     font-family: 'Roboto', sans-serif;
     position: absolute;
     text-align: center;
-    left: 37.5%;
-    bottom: 10.25%;
-    font-size: 2.25em;
+    margin: 0;
+    left: 50%;
+    bottom: 1.5vh;
+    transform: translate(-50%);
+    font-size: 175%;
     color: #EAEFF2;
-    opacity: .75;
+    opacity: 1;
     font-weight: bold;
+    border-style: solid;
+    padding: 0.75vh;
+    border-radius: 1vh;
 }
-
