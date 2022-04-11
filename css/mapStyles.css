@@ -43,8 +43,8 @@ lord-icon
 }
 
 body {
-    background: rgb(3,122,222);
-    background: linear-gradient(113deg, rgba(3,122,222,1) 0%, rgba(3,229,183,1) 100%);
+    background: #0261b1;
+    background: linear-gradient(113deg, #0261b1 0%, #02b792 100%);
 }
 
 .tt_sm {
@@ -60,14 +60,17 @@ body {
     position: absolute;
     text-align: center;
     margin: 0;
-    left: 50%;
-    bottom: 1.5vh;
-    transform: translate(-50%);
-    font-size: 175%;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%);
+    padding: 1vmax;
+    font-size: 3vh;
     color: #EAEFF2;
     opacity: 1;
     font-weight: bold;
     border-style: solid;
-    padding: 0.75vh;
-    border-radius: 1vh;
+    border-width: 0.4vmax;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-left-radius: 3.75vw;
 }
