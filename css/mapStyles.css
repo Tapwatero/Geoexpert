@@ -1,10 +1,10 @@
 lord-icon
 {
     position: absolute;
-    width: 15vw;
-    height: 15vh;
-    max-width: 40px;
-    max-height: 40px;
+    width: 12.5vw;
+    height: 12.5vh;
+    max-width: 55px;
+    max-height: 55px;
     transform: rotate(-90deg);
 }
 
@@ -23,7 +23,7 @@ lord-icon
     position: absolute;
     bottom: 10%;
     font-family: 'Roboto', sans-serif;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 7.5rem;
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255);
     border: none;
