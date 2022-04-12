@@ -194,7 +194,7 @@ var simplemaps_worldmap_mapdata={
       name: "Switzerland"
     },
     CI: {
-      name: "Côte d'Ivoire"
+      name: "Ivory Coast"
     },
     CL: {
       name: "Chile"

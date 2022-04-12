@@ -4735,7 +4735,7 @@ var simplemaps_worldmap_mapinfo = {
             NP: "Nepal",
             NR: "Nauru",
             XK: "Kosovo",
-            CI: "Côte d'Ivoire",
+            CI: "Ivory Coast",
             CH: "Switzerland",
             CO: "Colombia",
             CN: "China",
