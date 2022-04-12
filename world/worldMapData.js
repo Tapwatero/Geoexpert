@@ -644,7 +644,7 @@ var simplemaps_worldmap_mapdata={
       name: "South Sudan"
     },
     ST: {
-      name: "São Tomé and Principe"
+      name: "Sao Tome and Principe"
     },
     SV: {
       name: "El Salvador"
