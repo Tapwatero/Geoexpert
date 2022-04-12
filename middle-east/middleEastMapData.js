@@ -112,7 +112,7 @@ var simplemaps_worldmap_mapdata={
       inactive: "no"
     },
     AZ: {
-      name: "Azerbaidjan",
+      name: "Azerbaijan",
       hide: "no",
       inactive: "no"
     },
@@ -1174,3 +1174,5 @@ var simplemaps_worldmap_mapdata={
     entries: []
   }
 };
+
+console.log(simplemaps_worldmap_mapdata['state_specific']['AZ']);
