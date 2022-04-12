@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/Geoexpert/css/mapStyles.css">
+    <link rel="stylesheet" href="/css/mapStyles.css">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>World Map</title>
     <script src="worldMapData.js"></script>
     <script src="worldMap.js"></script>
-    <script src="/Geoexpert/scoreManager.js" defer></script>
-    <script src="/Geoexpert/isCorrect.js"></script>
+    <script src="/scoreManager.js" defer></script>
+    <script src="/isCorrect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="/Geoexpert/confetti.js"></script>
  </head>
@@ -20,8 +20,8 @@
            delay="50"
            colors="primary:#F5F5F5">
     </lord-icon></a>
-    <label id="score" for="query">0/228</label>
-    <input maxlength=35 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, Object.keys(simplemaps_worldmap_mapdata['state_specific']), simplemaps_worldmap_mapdata, 'world', false, 'worldScore', 228)" autofocus>
+    <label id="score" for="query">0/200</label>
+    <input maxlength=35 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, Object.keys(simplemaps_worldmap_mapdata['state_specific']), simplemaps_worldmap_mapdata, 'world', false, 'worldScore', 200)" autofocus>
     <div id="container" style="max-width: 1500px">
        <div id="map"></div>
     </div>

@@ -82,9 +82,6 @@ var simplemaps_worldmap_mapdata={
     AG: {
       name: "Antigua and Barbuda"
     },
-    AI: {
-      name: "Anguilla"
-    },
     AL: {
       name: "Albania"
     },
@@ -97,17 +94,11 @@ var simplemaps_worldmap_mapdata={
     AR: {
       name: "Argentina"
     },
-    AS: {
-      name: "American Samoa"
-    },
     AT: {
       name: "Austria"
     },
     AU: {
       name: "Australia"
-    },
-    AW: {
-      name: "Aruba"
     },
     AZ: {
       name: "Azerbaijan"
@@ -139,12 +130,6 @@ var simplemaps_worldmap_mapdata={
     BJ: {
       name: "Benin"
     },
-    BL: {
-      name: "Saint-Barthélemy"
-    },
-    BM: {
-      name: "Bermuda"
-    },
     BN: {
       name: "Brunei"
     },
@@ -153,12 +138,6 @@ var simplemaps_worldmap_mapdata={
     },
     BQBO: {
       name: "Netherlands"
-    },
-    BQSA: {
-      name: "Saba (Netherlands)"
-    },
-    BQSE: {
-      name: "St. Eustatius (Netherlands)"
     },
     BR: {
       name: "Brazil"
@@ -214,12 +193,6 @@ var simplemaps_worldmap_mapdata={
     CU: {
       name: "Cuba"
     },
-    CV: {
-      name: "Cape Verde"
-    },
-    CW: {
-      name: "Curaco (Netherlands)"
-    },
     CY: {
       name: "Cyprus"
     },
@@ -271,14 +244,8 @@ var simplemaps_worldmap_mapdata={
     FJ: {
       name: "Fiji"
     },
-    FK: {
-      name: "Falkland Islands"
-    },
     FM: {
       name: "Micronesia"
-    },
-    FO: {
-      name: "Faeroe Islands"
     },
     FR: {
       name: "France"
@@ -304,23 +271,14 @@ var simplemaps_worldmap_mapdata={
     GL: {
       name: "Greenland"
     },
-    GM: {
-      name: "The Gambia"
-    },
     GN: {
       name: "Guinea"
-    },
-    GP: {
-      name: "Guadeloupe (France)"
     },
     GQ: {
       name: "Equatorial Guinea"
     },
     GR: {
       name: "Greece"
-    },
-    GS: {
-      name: "South Georgia and South Sandwich Islands"
     },
     GT: {
       name: "Guatemala"
@@ -348,9 +306,6 @@ var simplemaps_worldmap_mapdata={
     },
     HU: {
       name: "Hungary"
-    },
-    IC: {
-      name: "Canary Islands"
     },
     ID: {
       name: "Indonesia"
@@ -412,9 +367,6 @@ var simplemaps_worldmap_mapdata={
     KW: {
       name: "Kuwait"
     },
-    KY: {
-      name: "Cayman Islands"
-    },
     KZ: {
       name: "Kazakhstan"
     },
@@ -463,9 +415,6 @@ var simplemaps_worldmap_mapdata={
     ME: {
       name: "Montenegro"
     },
-    MF: {
-      name: "Saint Martin (French)"
-    },
     MG: {
       name: "Madagascar"
     },
@@ -484,17 +433,8 @@ var simplemaps_worldmap_mapdata={
     MN: {
       name: "Mongolia"
     },
-    MP: {
-      name: "Northern Mariana Islands"
-    },
-    MQ: {
-      name: "Martinique"
-    },
     MR: {
       name: "Mauritania"
-    },
-    MS: {
-      name: "Montserrat"
     },
     MT: {
       name: "Malta"
@@ -519,9 +459,6 @@ var simplemaps_worldmap_mapdata={
     },
     NA: {
       name: "Namibia"
-    },
-    NC: {
-      name: "New Caledonia"
     },
     NE: {
       name: "Niger"
@@ -556,9 +493,6 @@ var simplemaps_worldmap_mapdata={
     PE: {
       name: "Peru"
     },
-    PF: {
-      name: "French Polynesia"
-    },
     PG: {
       name: "Papua New Guinea"
     },
@@ -588,9 +522,6 @@ var simplemaps_worldmap_mapdata={
     },
     QA: {
       name: "Qatar"
-    },
-    RE: {
-      name: "Reunion"
     },
     RO: {
       name: "Romania"
@@ -649,17 +580,11 @@ var simplemaps_worldmap_mapdata={
     SV: {
       name: "El Salvador"
     },
-    SX: {
-      name: "Saint Martin"
-    },
     SY: {
       name: "Syria"
     },
     SZ: {
       name: "Eswatini"
-    },
-    TC: {
-      name: "Turks and Caicos Islands"
     },
     TD: {
       name: "Chad"
@@ -721,12 +646,6 @@ var simplemaps_worldmap_mapdata={
     VE: {
       name: "Venezuela"
     },
-    VG: {
-      name: "British Virgin Islands"
-    },
-    VI: {
-      name: "United States Virgin Islands"
-    },
     VN: {
       name: "Vietnam"
     },
@@ -741,9 +660,6 @@ var simplemaps_worldmap_mapdata={
     },
     YE: {
       name: "Yemen"
-    },
-    YT: {
-      name: "Mayotte"
     },
     ZA: {
       name: "South Africa"
