@@ -1594,7 +1594,7 @@ state_specific:{
 	},
 
 	SZ: { 
-		name: 'Swaziland',
+		name: 'Eswatini',
 		description: 'default',
 		color: 'default',
 		hover_color: 'default',
@@ -1952,6 +1952,4 @@ height: 230.00000000000009
 }
 
 ]
-
-
 }
