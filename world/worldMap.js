@@ -4751,7 +4751,7 @@ var simplemaps_worldmap_mapinfo = {
             CW: "Curaco (Netherlands)",
             CV: "Cape Verde",
             CU: "Cuba",
-            SZ: "Swaziland",
+            SZ: "Eswatini",
             SY: "Syria",
             SX: "Saint Martin (Dutch)",
             KG: "Kyrgyzstan",

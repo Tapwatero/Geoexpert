@@ -656,7 +656,7 @@ var simplemaps_worldmap_mapdata={
       name: "Syria"
     },
     SZ: {
-      name: "Swaziland"
+      name: "Eswatini"
     },
     TC: {
       name: "Turks and Caicos Islands"
