@@ -852,7 +852,7 @@ var simplemaps_worldmap_mapdata={
       inactive: "no"
     },
     TJ: {
-      name: "Tadjikistan",
+      name: "Tajikistan",
       hide: "no",
       inactive: "no"
     },
@@ -1175,4 +1175,3 @@ var simplemaps_worldmap_mapdata={
   }
 };
 
-console.log(simplemaps_worldmap_mapdata['state_specific']['AZ']);
