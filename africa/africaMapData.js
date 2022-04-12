@@ -334,7 +334,7 @@ state_specific:{
 	},
 
 	CD: { 
-		name: 'Congo',
+		name: 'Democratic Republic of the Congo',
 		description: 'default',
 		color: 'default',
 		hover_color: 'default',
@@ -354,7 +354,7 @@ state_specific:{
 	},
 
 	CG: { 
-		name: 'Congo',
+		name: 'Republic of Congo',
 		description: 'default',
 		color: 'default',
 		hover_color: 'default',
