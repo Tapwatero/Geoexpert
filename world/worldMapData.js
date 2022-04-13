@@ -136,9 +136,6 @@ var simplemaps_worldmap_mapdata={
     BO: {
       name: "Bolivia"
     },
-    BQBO: {
-      name: "Netherlands"
-    },
     BR: {
       name: "Brazil"
     },
@@ -283,17 +280,11 @@ var simplemaps_worldmap_mapdata={
     GT: {
       name: "Guatemala"
     },
-    GU: {
-      name: "Guam"
-    },
     GW: {
       name: "Guinea-Bissau"
     },
     GY: {
       name: "Guyana"
-    },
-    HK: {
-      name: "Hong Kong"
     },
     HN: {
       name: "Honduras"
