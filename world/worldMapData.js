@@ -14,7 +14,7 @@ var simplemaps_worldmap_mapdata={
     state_url: "",
     border_size: 0.5,
     all_states_inactive: "no",
-    all_states_zoomable: "no",
+    all_states_zoomable: "yes",
     
     //Location defaults
     location_description: "Location description",
@@ -39,7 +39,7 @@ var simplemaps_worldmap_mapdata={
     hide_labels: "no",
    
     //Zoom settings
-    zoom: "no",
+    zoom: "yes",
     back_image: "no",
     initial_back: "no",
     initial_zoom: -1,
