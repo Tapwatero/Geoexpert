@@ -617,7 +617,7 @@ function isCorrectFlag(q, correct_countries, s, maxScore) {
     if (invertedCountriesMap.get(q.toLowerCase()) == document.getElementById("flag").src.substring(20, 22)) {
       countriesMap.delete((document.getElementById("flag").src).substring(20, 22));
       updateScore(s, maxScore);
-      if (Array.from(countriesMap).length > 1)
+      if (Array.from(countriesMap).length >= 1)
       {
         document.getElementById("flag").src = Array.from(countriesMap.values())[Math.floor(Math.random() * Array.from(countriesMap).length)];
       }
