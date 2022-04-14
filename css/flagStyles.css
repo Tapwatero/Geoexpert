@@ -1,0 +1,71 @@
+lord-icon
+{
+    position: absolute;
+    width: 12.5vw;
+    height: 12.5vh;
+    max-width: 55px;
+    max-height: 55px;
+    transform: rotate(-90deg);
+}
+
+#flag {
+    position: absolute;
+    width: 75%;
+    max-width: 550px;
+    margin: 1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 2.5%;
+}
+
+#query {
+    position: absolute;
+    bottom: 10%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 75%;
+    max-width: 50vmin;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    text-align: center;
+    background: transparent;
+    font-size: 150%;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    outline: none;
+    height: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+body {
+    background: #0261b1;
+    background: linear-gradient(113deg, #0261b1 0%, #02b792 100%);
+}
+
+#score {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%);
+    padding: 0.75vmax;
+    font-size: 2.75vh;
+    color: #EAEFF2;
+    opacity: 1;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 0.425vh;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-left-radius: 25%;
+}
