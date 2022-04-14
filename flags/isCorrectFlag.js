@@ -596,22 +596,30 @@ var countries =  {
   }
 }
 
-const countriesMap = new Map();
-const invertedCountriesMap = new Map();
+let countriesMap = new Map();
+var invertedCountriesMap = new Map();
+
+function setMap(correct_countries)
+{
+  for (let i = 0; i < correct_countries.length; i++) {
+    countriesMap.set(correct_countries[i].toLowerCase(), "https://flagcdn.com/" + correct_countries[i].toLowerCase() + ".svg");
+    invertedCountriesMap.set(countries[correct_countries[i]]['name'].toLowerCase(), correct_countries[i].toLowerCase());
+    invertedCountriesMap.set("present", true);
+  }
+}
+
 
 function isCorrectFlag(q, correct_countries, s, maxScore) {
-    if (Array.from(countriesMap).length == 0) {
-        for (let i = 0; i < correct_countries.length; i++) {
-            countriesMap.set(correct_countries[i].toLowerCase(), "https://flagcdn.com/" + correct_countries[i].toLowerCase() + ".svg");
-            invertedCountriesMap.set(countries[correct_countries[i]]['name'].toLowerCase(), correct_countries[i].toLowerCase());
-        }
-    }
+  if (!invertedCountriesMap.has("present")) {
+    setMap(correct_countries);
+  }
     document.getElementById("query").value = "";
     if (invertedCountriesMap.get(q.toLowerCase()) == document.getElementById("flag").src.substring(20, 22)) {
-        countriesMap.delete((document.getElementById("flag").src).substring(20, 22));
-        if (Array.from(countriesMap).length != 0) {
-            document.getElementById("flag").src = Array.from(countriesMap.values())[Math.floor(Math.random() * Array.from(countriesMap).length)];
-            updateScore(s, maxScore);
-        }
+      countriesMap.delete((document.getElementById("flag").src).substring(20, 22));
+      updateScore(s, maxScore);
+      if (Array.from(countriesMap).length > 1)
+      {
+        document.getElementById("flag").src = Array.from(countriesMap.values())[Math.floor(Math.random() * Array.from(countriesMap).length)];
+      }
     }
 }

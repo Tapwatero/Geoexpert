@@ -26,8 +26,5 @@
     <script>
         document.getElementById("flag").src = "https://flagcdn.com/" + Object.keys(simplemaps_worldmap_mapdata['state_specific'])[Math.floor(Math.random()*Object.keys(simplemaps_worldmap_mapdata['state_specific']).length)].toLowerCase() + ".svg";
    </script>
-   <script>
-       document.body.onkeyup = function(e){if(e.keyCode == 17){document.getElementById("flag").src = "https://flagcdn.com/" + Object.keys(simplemaps_worldmap_mapdata['state_specific'])[Math.floor(Math.random()*Object.keys(simplemaps_worldmap_mapdata['state_specific']).length)].toLowerCase() + ".svg";}}
-   </script>
 </body>
 </html>
