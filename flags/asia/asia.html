@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/Geoexpert/css/flagStyles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Geoexpert/flags/isCorrectFlag.js" defer></script>
+    <script src="/Geoexpert/scoreManager.js"></script>
+    <script src="/Geoexpert/confetti.js"></script>
+    <script src="/Geoexpert/maps/asia/asiaMapData.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <title>Asian Flags</title>
+</head>
+<body>
+    <a href="/Geoexpert/flags/flags.html"><script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+    <lord-icon
+            src="https://cdn.lordicon.com/eflfmgmj.json"
+            trigger="loop-on-hover"
+            delay="50"
+            colors="primary:#F5F5F5">
+    </lord-icon></a>
+    <label id="score" for="query">0/18</label>
+    <input maxlength=25 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrectFlag(this.value, simplemaps_worldmap_mapdata['regions'][6]['states'], 'southAmericaFlagScore', 18)" autofocus>
+    <img id="flag" src="" alt="">
+    <script>
+        document.getElementById("flag").src = "https://flagcdn.com/" + simplemaps_worldmap_mapdata['regions'][6]['states'][Math.floor(Math.random() * simplemaps_worldmap_mapdata['regions'][6]['states'].length)].toLowerCase() + ".svg";
+   </script>
+</body>
+</html>
