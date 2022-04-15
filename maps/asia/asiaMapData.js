@@ -1156,7 +1156,18 @@ var simplemaps_worldmap_mapdata={
         "AU",
         "PG",
         "FJ",
-        "NZ"
+        "NZ",
+        "FJ",
+        "SB",
+        "FM",
+        "VU",
+        "WS",
+        "KI",
+        "TO",
+        "MH",
+        "PW",
+        "TV",
+        "NR"
       ]
     },
     "8": {
