@@ -26,5 +26,6 @@
     <script>
         document.getElementById("flag").src = "https://flagcdn.com/" + simplemaps_worldmap_mapdata['regions'][5]['states'][Math.floor(Math.random() * simplemaps_worldmap_mapdata['regions'][5]['states'].length)].toLowerCase() + ".svg";
    </script>
+    <script>window.onkeyup = function (event) {if (event.keyCode == 17) {skipFlag(simplemaps_worldmap_mapdata['regions'][5]['states']); }}</script>
 </body>
 </html>
