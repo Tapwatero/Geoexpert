@@ -608,6 +608,15 @@ function setMap(correct_countries)
   }
 }
 
+function skipFlag(correct_countries) 
+{
+  if (countriesMap.size == 0) {
+    document.getElementById("flag").src = "https://flagcdn.com/" + correct_countries[Math.floor(Math.random() * correct_countries.length)].toLowerCase() + ".svg";
+  } else {
+    document.getElementById("flag").src = Array.from(countriesMap.values())[Math.floor(Math.random() * Array.from(countriesMap).length)];
+  }
+}
+
 
 function isCorrectFlag(q, correct_countries, s, maxScore) {
   if (!invertedCountriesMap.has("present")) {

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/Geoexpert/css/flagStyles.css">
+    <link rel="stylesheet" href="/css/flagStyles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/Geoexpert/flags/isCorrectFlag.js" defer></script>
-    <script src="/Geoexpert/scoreManager.js"></script>
+    <script src="/flags/isCorrectFlag.js" defer></script>
+    <script src="/scoreManager.js"></script>
     <script src="/Geoexpert/confetti.js"></script>
-    <script src="/Geoexpert/maps/asia/asiaMapData.js"></script>
+    <script src="/maps/asia/asiaMapData.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <title>Asian Flags</title>
 </head>
@@ -26,5 +26,6 @@
     <script>
         document.getElementById("flag").src = "https://flagcdn.com/" + simplemaps_worldmap_mapdata['regions'][6]['states'][Math.floor(Math.random() * simplemaps_worldmap_mapdata['regions'][6]['states'].length)].toLowerCase() + ".svg";
    </script>
+    <script>window.onkeyup = function (event) {if (event.keyCode == 27) {skipFlag(simplemaps_worldmap_mapdata['regions'][6]['states']); }}</script>
 </body>
 </html>
