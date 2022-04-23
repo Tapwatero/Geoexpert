@@ -21,7 +21,7 @@
             colors="primary:#F5F5F5">
     </lord-icon></a>
     <label id="score" for="query">0/197</label>
-    <input maxlength=25 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrectFlag(this.value, Object.keys(simplemaps_worldmap_mapdata['state_specific']), 'worldFlagScore', 197)" autofocus>
+    <input maxlength=40 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrectFlag(this.value, Object.keys(simplemaps_worldmap_mapdata['state_specific']), 'worldFlagScore', 197)" autofocus>
     <img id="flag" src="" alt="">
     <script>
         document.getElementById("flag").src = "https://flagcdn.com/" + Object.keys(simplemaps_worldmap_mapdata['state_specific'])[Math.floor(Math.random()*Object.keys(simplemaps_worldmap_mapdata['state_specific']).length)].toLowerCase() + ".svg";
