@@ -608,17 +608,20 @@ function setMap(correct_countries)
   }
 }
 
-function skipFlag(correct_countries) 
+async function skipFlag(correct_countries) 
 {
+  document.getElementById("flag").classList.add("flag-change");
   if (countriesMap.size == 0) {
     document.getElementById("flag").src = "https://flagcdn.com/" + correct_countries[Math.floor(Math.random() * correct_countries.length)].toLowerCase() + ".svg";
   } else {
     document.getElementById("flag").src = Array.from(countriesMap.values())[Math.floor(Math.random() * Array.from(countriesMap).length)];
   }
+  await new Promise(r => setTimeout(r, 1000));
+  document.getElementById("flag").classList.remove("flag-change");
 }
 
 
-function isCorrectFlag(q, correct_countries, s, maxScore) {
+async function isCorrectFlag(q, correct_countries, s, maxScore) {
   if (!invertedCountriesMap.has("present")) {
     setMap(correct_countries);
   }
@@ -628,7 +631,10 @@ function isCorrectFlag(q, correct_countries, s, maxScore) {
       updateScore(s, maxScore);
       if (Array.from(countriesMap).length >= 1)
       {
+        document.getElementById("flag").classList.add("flag-change");
         document.getElementById("flag").src = Array.from(countriesMap.values())[Math.floor(Math.random() * Array.from(countriesMap).length)];
+        await new Promise(r => setTimeout(r, 1000));
+        document.getElementById("flag").classList.remove("flag-change");
       }
     }
 }

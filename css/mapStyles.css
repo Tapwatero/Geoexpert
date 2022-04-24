@@ -1,5 +1,6 @@
 lord-icon
 {
+    z-index: 99;
     position: absolute;
     width: 12.5vw;
     height: 12.5vh;
