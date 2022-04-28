@@ -9,6 +9,7 @@
     <script src="/Geoexpert/scoreManager.js"></script>
     <script src="/Geoexpert/confetti.js"></script>
     <script src="/Geoexpert/maps/europe/europeMapData.js"></script>
+    <script src="/Geoexpert/timer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <title>European Flags</title>
 </head>
@@ -20,7 +21,15 @@
             delay="50"
             colors="primary:#F5F5F5">
     </lord-icon></a>
-    <label id="score" for="query">0/42</label>
+    <div class="info">
+        <div class="score">
+            <h1 id="score">0/42</h1>
+        </div>
+        <hr>
+        <div class="timer">
+            <h1 id="timer">00:00</h1>
+        </div>
+    </div>
     <input maxlength=40 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrectFlag(this.value, Object.keys(simplemaps_europemap_mapdata['state_specific']), 'europeFlagScore', 42)" autofocus>
     <img id="flag" src="" alt="">
     <script>

@@ -601,6 +601,7 @@ var invertedCountriesMap = new Map();
 
 function setMap(correct_countries)
 {
+  startTimer();
   for (let i = 0; i < correct_countries.length; i++) {
     countriesMap.set(correct_countries[i].toLowerCase(), "https://flagcdn.com/" + correct_countries[i].toLowerCase() + ".svg");
     invertedCountriesMap.set(countries[correct_countries[i]]['name'].toLowerCase(), correct_countries[i].toLowerCase());
@@ -628,7 +629,7 @@ async function isCorrectFlag(q, correct_countries, s, maxScore) {
     document.getElementById("query").value = "";
     if (invertedCountriesMap.get(q.toLowerCase()) == document.getElementById("flag").src.substring(20, 22)) {
       countriesMap.delete((document.getElementById("flag").src).substring(20, 22));
-      updateScore(s, maxScore);
+      updateScore(maxScore);
       if (Array.from(countriesMap).length >= 1)
       {
         document.getElementById("flag").classList.add("flag-change");
