@@ -1,8 +1,8 @@
 lord-icon
 {
     position: absolute;
-    width: 12.5vw;
-    height: 12.5vh;
+    width: 11vw;
+    height: 11vh;
     max-width: 55px;
     max-height: 55px;
     transform: rotate(-90deg);
@@ -104,6 +104,6 @@ hr {
     width: 0.125vw;
     background-color: whitesmoke;
     box-sizing: content-box;
-    margin-bottom: 0px;
+    margin-bottom: 0%;
     margin-top: -5px;
 }
