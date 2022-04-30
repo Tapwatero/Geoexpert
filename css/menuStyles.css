@@ -1,6 +1,5 @@
 img {
-    width: 35vh;
-    max-width: 35vw;
+    width: 30vh;
     box-shadow: 0px 0px 0px 0.4vmin whitesmoke;
     border-radius: 25vmin;
     transition: transform 1.75s, filter 1s ease-in-out;
@@ -12,13 +11,17 @@ img:hover {
     filter: brightness(100%);
     transform: scale(0.95);
 }
+
 #choices {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 2.5vw;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -40%);
-    border-spacing: 2vw 7.5vh;
 }
+
 
 .background--custom {
     background-color: #FFFFFF;
@@ -33,8 +36,8 @@ img:hover {
   canvas#canvas {
     z-index: -1;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     transform: rotate(0deg) scale(1) translateY(0%);
     --gradient-color-1: #ef008f; 
     --gradient-color-2: #6ec3f4; 
@@ -43,6 +46,11 @@ img:hover {
     --gradient-speed: 0.000006;
   }
 
-  tr {
-      overflow: hidden;
+  @media only screen and (max-width: 600px) {
+      #choices {
+        grid-template-columns: auto auto;
+      }
+      img {
+        max-width: 10em;
+      }
   }
