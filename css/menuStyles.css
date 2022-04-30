@@ -1,195 +1,48 @@
 img {
+    width: 35vh;
+    max-width: 35vw;
+    box-shadow: 0px 0px 0px 0.4vmin whitesmoke;
+    border-radius: 25vmin;
+    transition: transform 1.75s, filter 1s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+}
+
+img:hover {
+    filter: brightness(100%);
+    transform: scale(0.95);
+}
+#choices {
     position: absolute;
-    top: 15vh;
-    left: 27.5vw;
-    border-radius: 50px;
-    max-width: 20vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    border-spacing: 2vw 7.5vh;
 }
 
-body {
-    background: #fc00ff;
-    background: linear-gradient(90deg, #004FF9 0%, #FFF94C 100%);
-}
+.background--custom {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -2;
+    top: 0;
+    left: 0;
+  }
+  canvas#canvas {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg) scale(1) translateY(0%);
+    --gradient-color-1: #ef008f; 
+    --gradient-color-2: #6ec3f4; 
+    --gradient-color-3: #7038ff;  
+    --gradient-color-4: #ffba27;
+    --gradient-speed: 0.000006;
+  }
 
-/* States */
-
-.states-img-hover-zoom--brightness {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Brightness-zoom Container */
-.states-img-hover-zoom--brightness img {
-    transition: transform 2s, filter 1.5s ease-in-out;
-    transform-origin: center center;
-    filter: brightness(70%);
-}
-  
-  /* The Transformation */
-.states-img-hover-zoom--brightness:hover img {
-    filter: brightness(100%);
-    transform: scale(0.95);
-}
-
-/* Europe */
-
-.europe-img-hover-zoom--brightness {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Brightness-zoom Container */
-.europe-img-hover-zoom--brightness img {
-    transition: transform 2s, filter 1.5s ease-in-out;
-    transform-origin: center center;
-    filter: brightness(70%);
-    left: 2.5vw;
-}
-  
-  /* The Transformation */
-.europe-img-hover-zoom--brightness:hover img {
-    filter: brightness(100%);
-    transform: scale(0.95);
-}
-
-/* Asia */
-
-.asia-img-hover-zoom--brightness {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Brightness-zoom Container */
-.asia-img-hover-zoom--brightness img {
-    transition: transform 2s, filter 1.5s ease-in-out;
-    transform-origin: center center;
-    filter: brightness(70%);
-    left: 52.5vw;
-}
-  
-  /* The Transformation */
-.asia-img-hover-zoom--brightness:hover img {
-    filter: brightness(100%);
-    transform: scale(0.95);
-}
-
-
-/* South America */
-
-.south-america-img-hover-zoom--brightness {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Brightness-zoom Container */
-.south-america-img-hover-zoom--brightness img {
-    transition: transform 2s, filter 1.5s ease-in-out;
-    transform-origin: center center;
-    filter: brightness(70%);
-    left: 77.5vw;
-}
-  
-  /* The Transformation */
-.south-america-img-hover-zoom--brightness:hover img {
-    filter: brightness(100%);
-    transform: scale(0.95);
-}
-
-
-/* Africa */
-
-.africa-img-hover-zoom--brightness {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Brightness-zoom Container */
-.africa-img-hover-zoom--brightness img {
-    transition: transform 2s, filter 1.5s ease-in-out;
-    transform-origin: center center;
-    filter: brightness(70%);
-    left: 77.5vw;
-    top: 45vh;
-}
-  
-  /* The Transformation */
-.africa-img-hover-zoom--brightness:hover img {
-    filter: brightness(100%);
-    transform: scale(0.95);
-}
-
-/* World */
-
-.world-img-hover-zoom--brightness {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Brightness-zoom Container */
-.world-img-hover-zoom--brightness img {
-    transition: transform 2s, filter 1.5s ease-in-out;
-    transform-origin: center center;
-    filter: brightness(70%);
-    left: 52.5vw;
-    top: 45vh;
-}
-  
-  /* The Transformation */
-.world-img-hover-zoom--brightness:hover img {
-    filter: brightness(100%);
-    transform: scale(0.95);
-}
-
-/* Middle East */
-
-.middle-east-img-hover-zoom--brightness {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Brightness-zoom Container */
-.middle-east-img-hover-zoom--brightness img {
-    transition: transform 2s, filter 1.5s ease-in-out;
-    transform-origin: center center;
-    filter: brightness(70%);
-    left:  27.5vw;
-    top: 45vh;
-}
-  
-  /* The Transformation */
-.middle-east-img-hover-zoom--brightness:hover img {
-    filter: brightness(100%);
-    transform: scale(0.95);
-}
-
-/* Caribbean  */
-
-
-.caribbean-img-hover-zoom--brightness {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Brightness-zoom Container */
-.caribbean-img-hover-zoom--brightness img {
-    transition: transform 2s, filter 1.5s ease-in-out;
-    transform-origin: center center;
-    filter: brightness(70%);
-    left: 2.5vw;
-    top: 45vh;
-}
-  
-  /* The Transformation */
-.caribbean-img-hover-zoom--brightness:hover img {
-    filter: brightness(100%);
-    transform: scale(0.95);
-}
-
+  tr {
+      overflow: hidden;
+  }
