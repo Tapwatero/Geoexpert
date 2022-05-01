@@ -25,7 +25,10 @@ function isCorrect(q, correct_countries, map, reloadPointer, labels, maxScore) {
 
   document.getElementById("query").value = "";
   if (Array.from(states).length == 0) {
-    startTimer();
+    if (!localStorage.getItem("timed") == true) {
+      startTimer();
+    }
+    localStorage.setItem("timed", true)
   }
   for (let i = 0; i < correct_countries.length; i++) {
     states.set(map['state_specific'][correct_countries[i]]['name'].toLowerCase(), correct_countries[i]);
