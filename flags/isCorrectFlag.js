@@ -622,7 +622,7 @@ async function skipFlag(correct_countries)
 }
 
 
-async function isCorrectFlag(q, correct_countries, s, maxScore) {
+async function isCorrectFlag(q, correct_countries, maxScore) {
   if (!invertedCountriesMap.has("present")) {
     setMap(correct_countries);
   }
