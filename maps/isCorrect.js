@@ -29,6 +29,7 @@ function isCorrect(q, correct_countries, map, reloadPointer, labels, maxScore) {
   }
   if (states.has(q.toLowerCase()) && map['state_specific'][states.get(q.toLowerCase())]['color'] != "#097696")
   {
+    updateScore(maxScore);
     map['state_specific'][states.get(q.toLowerCase())]['color'] = "#097696";
     if (labels)
     {
@@ -39,6 +40,5 @@ function isCorrect(q, correct_countries, map, reloadPointer, labels, maxScore) {
       }
     }
     reload(reloadPointer);
-    updateScore(maxScore);
   }
 }
