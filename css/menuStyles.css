@@ -59,24 +59,3 @@ img {
       }
   }
 
-#label {
-  transition: opacity 1s ease-in-out;
-  opacity: 0;
-  color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2vh;
-  border-style: solid;
-  text-align: center;
-  display: table;
-  margin:auto;
-  margin-bottom: -0.25%;
-  border-bottom-width: 0px;
-  border-top-left-radius: 1vw;
-  border-top-right-radius: 1vw;
-  padding: 0.5vmin;
-}
-
-#choice:hover > h1 {
-  opacity: 1;
-  transform: scale(0.95);
-}
