@@ -25,6 +25,7 @@ function isCorrect(q, correct_countries, map, reloadPointer, labels, maxScore) {
 
   document.getElementById("query").value = "";
   for (let i = 0; i < correct_countries.length; i++) {
+    startTimer();
     states.set(map['state_specific'][correct_countries[i]]['name'].toLowerCase(), correct_countries[i]);
   }
   if (states.has(q.toLowerCase()) && map['state_specific'][states.get(q.toLowerCase())]['color'] != "#097696")
