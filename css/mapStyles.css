@@ -74,3 +74,50 @@ body {
     border-right-width: 0px;
     border-bottom-left-radius: 25%;
 }
+
+.info {
+    max-width: 200px;
+    box-sizing: border-box;
+    font-size: 1.25vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0.425vh;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-left-radius: 20%;
+    padding: 0.25vw;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    color: #EAEFF2;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.score {
+    line-height: 1;
+    left: 50%;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+    text-align: center;
+}
+
+.timer {
+    line-height: 1;
+    right: 50%;
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+    text-align: center;
+}
+
+hr {
+    height: 6.5vh;
+    width: 0.125vw;
+    background-color: whitesmoke;
+    box-sizing: content-box;
+    margin-bottom: 0%;
+    margin-top: -5px;
+}
