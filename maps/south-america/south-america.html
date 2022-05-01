@@ -10,6 +10,7 @@
     <script src="/Geoexpert/maps/isCorrect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="/Geoexpert/confetti.js"></script>
+    <script src="/Geoexpert/timer.js"></script>i
   </head>
   <body>
     <a href="/Geoexpert/maps/maps.html"><script src="https://cdn.lordicon.com/lusqsztk.js"></script>
@@ -19,7 +20,15 @@
            delay="50"
            colors="primary:#F5F5F5">
     </lord-icon></a>
-    <label id="score" for="query">0/13</label>
+    <div class="info">
+      <div class="score">
+          <h1 id="score">0/13</h1>
+      </div>
+      <hr>
+      <div class="timer">
+          <h1 id="timer">00:00</h1>
+      </div>
+  </div>
     <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, simplemaps_worldmap_mapdata['regions'][1]['states'], simplemaps_worldmap_mapdata, 'world', false,  13)" autofocus>
     <div id="container">
        <div id="map"></div>

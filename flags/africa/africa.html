@@ -30,7 +30,7 @@
             <h1 id="timer">00:00</h1>
         </div>
     </div>
-    <input maxlength=40 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrectFlag(this.value, simplemaps_worldmap_mapdata['regions'][4]['states'], 'africaFlagScore', 49)" autofocus>
+    <input maxlength=40 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrectFlag(this.value, simplemaps_worldmap_mapdata['regions'][4]['states'], false, 49)" autofocus>
     <img id="flag" src="" alt="">
     <script>
         document.getElementById("flag").src = "https://flagcdn.com/" + simplemaps_worldmap_mapdata['regions'][4]['states'][Math.floor(Math.random() * simplemaps_worldmap_mapdata['regions'][4]['states'].length)].toLowerCase() + ".svg";
