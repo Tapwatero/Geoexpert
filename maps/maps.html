@@ -9,14 +9,23 @@
     <title>Geoexpert Map Menu</title>
 </head>
 <body>
-    <a href="/Geoexpert/maps/europe/europe.html"><div class="europe-img-hover-zoom--brightness"><img class="europe-img-hover-zoom--brightness" src="/Geoexpert/assets/map/Brussels-Belgium.webp" alt="Brussels Governing Building (Europe)"></div></a>
-    <a href="/Geoexpert/maps/states/states.html"><div class="states-img-hover-zoom--brightness"><img class="states-img-hover-zoom--brightness" src="/Geoexpert/assets/map/capitol-hill-congress.webp" alt="Capitol Building (50 States)"></div></a>
-    <a href="/Geoexpert/maps/south-america/south-america.html"><div class="south-america-img-hover-zoom--brightness"><img class="south-america-img-hover-zoom--brightness" src="/Geoexpert/assets/map/Christ-The-Redeemer-Pictures.webp" alt="Christ The Redeemer (South America)"></div></a>
-    <a href="/Geoexpert/maps/asia/asia.html"><div class="asia-img-hover-zoom--brightness"><img class="asia-img-hover-zoom--brightness" src="/Geoexpert/assets/map/wall-18.webp" alt="Tarj Mahal (Asia)"></div></a>
-    <a href="/Geoexpert/maps/africa/africa.html"><div class="africa-img-hover-zoom--brightness"><img class="africa-img-hover-zoom--brightness" src="/Geoexpert/assets/map/pyramids-giza.webp" alt="The Great Pyramids (Africa)"></div></a>
-    <a href="/Geoexpert/maps/world/world.html"><div class="world-img-hover-zoom--brightness"><img class="world-img-hover-zoom--brightness" src="/Geoexpert/assets/map/world.jpg" alt="The World"></div></a>
-    <a href="/Geoexpert/maps/middle-east/middle-east.html"><div class="middle-east-img-hover-zoom--brightness"><img class="middle-east-world-img-hover-zoom--brightness" src="/Geoexpert/assets/map/burj_khalifa13.webp" alt="Burj Khalifa (Middle East)"></div></a>
-    <a href="/Geoexpert/maps/caribbean/caribbean.html"><div class="caribbean-img-hover-zoom--brightness"><img class="caribbean-world-img-hover-zoom--brightness" src="/Geoexpert/assets/map/Guana-Island.webp" alt="Guana-Island (Caribbean)"></div></a>
+    <div class="background--custom">
+        <canvas id="canvas">
+      </div>
+      <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+      <script>
+      var gradient = new Gradient();
+      gradient.initGradient("#canvas");
+      </script>
+    <div id="choices">
+        <div id="choice"><h1 id="label">Europe</h1><a href="/Geoexpert/maps/europe/europe.html"><img src="/Geoexpert/assets/map/Brussels-Belgium.webp"></a></div>
+        <div id="choice"><h1 id="label">50 States</h1><a href="/Geoexpert/maps/world/world.html"><img src="/Geoexpert/assets/map/world.jpg"></a></div>
+        <div id="choice"><h1 id="label">South America</h1><a href="/Geoexpert/maps/south-america/south-america.html"><img src="/Geoexpert/assets/map/Christ-The-Redeemer-Pictures.webp"></a></div>
+        <div id="choice"><h1 id="label">Asia</h1><a href="/Geoexpert/maps/asia/asia.html"><img src="/Geoexpert/assets/map/wall-18.webp"></a></div>
+        <div id="choice"><h1 id="label">Africa</h1><a href="/Geoexpert/maps/africa/africa.html"><img src="/Geoexpert/assets/map/pyramids-giza.webp"></a></div>
+        <div id="choice"><h1 id="label">Middle East</h1><a href="/Geoexpert/maps/middle-east/middle-east.html"><img src="/Geoexpert/assets/map/burj_khalifa13.webp"></a></div>
+        <div id="choice"><h1 id="label">Caribbean</h1><a href="/Geoexpert/maps/caribbean/caribbean"><img src="/Geoexpert/assets/map/Guana-Island.webp"></a></div>
+    <div>
 </body>
 </html>
 
