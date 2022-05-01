@@ -38,7 +38,7 @@ function isCorrect(q, correct_countries, map, reloadPointer, labels, s, maxScore
         map['labels'][states.get(q.toLowerCase())]['pill'] = "yes";
       }
     }
-    updateScore(s, maxScore);
+    updateScore(maxScore);
     reload(reloadPointer);
   }
 }
