@@ -20,7 +20,7 @@ function reload(reloadPointer) {
   }
 }
 
-function isCorrect(q, correct_countries, map, reloadPointer, labels, s, maxScore) {
+function isCorrect(q, correct_countries, map, reloadPointer, labels, maxScore) {
   const states = new Map();
 
   document.getElementById("query").value = "";
@@ -38,7 +38,7 @@ function isCorrect(q, correct_countries, map, reloadPointer, labels, s, maxScore
         map['labels'][states.get(q.toLowerCase())]['pill'] = "yes";
       }
     }
-    updateScore(maxScore);
     reload(reloadPointer);
+    updateScore(maxScore);
   }
 }
