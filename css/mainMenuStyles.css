@@ -1,0 +1,45 @@
+#menu {
+    text-align: center;
+    top: 5px;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 5vh;
+}
+
+#flags {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0%;
+    top: 0%;
+    background-color: red;
+}
+
+#maps {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: blue;
+}
+
+#flags:hover {
+    width: 55%;
+}
+
+#flags:hover + #maps {
+    width: 45%;
+}
+
+#maps:hover {
+    width: 55%;
+}
+
+#maps:hover + #flags {
+    width: 45%;
+}

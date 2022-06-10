@@ -626,10 +626,10 @@ async function isCorrectFlag(q, correct_countries, maxScore) {
   if (!invertedCountriesMap.has("present")) {
     setMap(correct_countries);
   }
-    document.getElementById("query").value = "";
     if (invertedCountriesMap.get(q.toLowerCase()) == document.getElementById("flag").src.substring(20, 22)) {
       countriesMap.delete((document.getElementById("flag").src).substring(20, 22));
       updateScore(maxScore);
+      document.getElementById("query").value = "";
       if (Array.from(countriesMap).length >= 1)
       {
         document.getElementById("flag").classList.add("flag-change");
