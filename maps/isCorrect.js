@@ -23,7 +23,6 @@ function reload(reloadPointer) {
 function isCorrect(q, correct_countries, map, reloadPointer, labels, maxScore) {
   const states = new Map();
 
-  document.getElementById("query").value = "";
   if (Array.from(states).length == 0) {
     if (!localStorage.getItem("timed") == true) {
       startTimer();
@@ -35,6 +34,7 @@ function isCorrect(q, correct_countries, map, reloadPointer, labels, maxScore) {
   }
   if (states.has(q.toLowerCase()) && map['state_specific'][states.get(q.toLowerCase())]['color'] != "#097696")
   {
+    document.getElementById("query").value = "";
     updateScore(maxScore);
     map['state_specific'][states.get(q.toLowerCase())]['color'] = "#097696";
     if (labels)

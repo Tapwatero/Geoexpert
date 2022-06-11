@@ -31,7 +31,7 @@
           <h1 id="timer">00:00</h1>
       </div>
   </div>
-   <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onchange="isCorrect(this.value, Object.keys(simplemaps_usmap_mapdata['state_specific']), simplemaps_usmap_mapdata, 'america', true,  50)" autofocus>
+   <input maxlength=14 style="text-transform: capitalize;" type="text" class="query" id="query" onkeyup="isCorrect(this.value, Object.keys(simplemaps_usmap_mapdata['state_specific']), simplemaps_usmap_mapdata, 'america', true,  50)" autofocus>
    <div id="container">
       <div id="map"></div>
    </div>

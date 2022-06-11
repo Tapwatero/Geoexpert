@@ -5394,7 +5394,7 @@ var simplemaps_caribbeanmap_mapinfo = {
                     var t;
                     Rt = function() {
                         clearTimeout(t), t = setTimeout(e, 300)
-                    }, window.addEventListener ? (window.addEventListener("resize", Rt, !1), window.addEventListener("orientationchange", Rt, !1)) : (window.attachEvent("resize", Rt, !1), window.attachEvent("orientationchange", Rt, !1));
+                    }, window.addEventListener ? (window.addEventListener("resize", Rt, !1), window.addEventListener("orientationkeyup", Rt, !1)) : (window.attachEvent("resize", Rt, !1), window.attachEvent("orientationkeyup", Rt, !1));
                     ie && (document.body.onresize = function() {
                         e()
                     })
@@ -5664,7 +5664,7 @@ var simplemaps_caribbeanmap_mapinfo = {
                             t = void 0 === _.keyboard_omit ? "" : _.keyboard_omit;
                         if (!(t.indexOf("navigat") > -1)) {
                             var i = document.createElement("select");
-                            i.options.add(new Option(e, "-1")), i.options.add(new Option("Back", "back")), g && (i.options.add(new Option("Zoom in", "in")), i.options.add(new Option("Zoom out", "out")), i.options.add(new Option("Left", "left")), i.options.add(new Option("Right", "right")), i.options.add(new Option("Up", "up")), i.options.add(new Option("Down", "down"))), i.style.marginRight = ".5em", i.style.marginTop = ".5em", i.style.float = "left", ye.appendChild(i), i.onchange = function(e) {
+                            i.options.add(new Option(e, "-1")), i.options.add(new Option("Back", "back")), g && (i.options.add(new Option("Zoom in", "in")), i.options.add(new Option("Zoom out", "out")), i.options.add(new Option("Left", "left")), i.options.add(new Option("Right", "right")), i.options.add(new Option("Up", "up")), i.options.add(new Option("Down", "down"))), i.style.marginRight = ".5em", i.style.marginTop = ".5em", i.style.float = "left", ye.appendChild(i), i.onkeyup = function(e) {
                                 if ("-1" == this.value) return !1;
                                 "back" == this.value && It(), "out" == this.value && et(), "in" == this.value && $e(), "left" == this.value && tt("-.25", "x"), "right" == this.value && tt(".25", "x"), "up" == this.value && tt("-.25", "y"), "down" == this.value && tt(".25", "y"), setTimeout(function() {
                                     i.value = "-1"
@@ -5704,7 +5704,7 @@ var simplemaps_caribbeanmap_mapinfo = {
                                     var v = f[h];
                                     "out" == v.sm.type || v.sm.inactive || v.sm.hide || p.options.add(new Option(v.sm.name, v.sm.id))
                                 }
-                                p.onchange = o.callback_closure({
+                                p.onkeyup = o.callback_closure({
                                     entry: c,
                                     dropdown: p
                                 }, function(e) {

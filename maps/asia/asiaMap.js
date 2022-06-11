@@ -6793,7 +6793,7 @@ var simplemaps_worldmap_mapinfo = {
                         var e;
                         Re = function() {
                             clearTimeout(e), e = setTimeout(t, 300)
-                        }, window.addEventListener ? (window.addEventListener("resize", Re, !1), window.addEventListener("orientationchange", Re, !1)) : (window.attachEvent("resize", Re, !1), window.attachEvent("orientationchange", Re, !1));
+                        }, window.addEventListener ? (window.addEventListener("resize", Re, !1), window.addEventListener("orientationkeyup", Re, !1)) : (window.attachEvent("resize", Re, !1), window.attachEvent("orientationkeyup", Re, !1));
                         it && (document.body.onresize = function() {
                             t()
                         })
@@ -7063,7 +7063,7 @@ var simplemaps_worldmap_mapinfo = {
                                 e = void 0 === _.keyboard_omit ? "" : _.keyboard_omit;
                             if (!(e.indexOf("navigat") > -1)) {
                                 var i = document.createElement("select");
-                                i.options.add(new Option(t, "-1")), i.options.add(new Option("Back", "back")), g && (i.options.add(new Option("Zoom in", "in")), i.options.add(new Option("Zoom out", "out")), i.options.add(new Option("Left", "left")), i.options.add(new Option("Right", "right")), i.options.add(new Option("Up", "up")), i.options.add(new Option("Down", "down"))), i.style.marginRight = ".5em", i.style.marginTop = ".5em", i.style.float = "left", yt.appendChild(i), i.onchange = function(t) {
+                                i.options.add(new Option(t, "-1")), i.options.add(new Option("Back", "back")), g && (i.options.add(new Option("Zoom in", "in")), i.options.add(new Option("Zoom out", "out")), i.options.add(new Option("Left", "left")), i.options.add(new Option("Right", "right")), i.options.add(new Option("Up", "up")), i.options.add(new Option("Down", "down"))), i.style.marginRight = ".5em", i.style.marginTop = ".5em", i.style.float = "left", yt.appendChild(i), i.onkeyup = function(t) {
                                     if ("-1" == this.value) return !1;
                                     "back" == this.value && Ie(), "out" == this.value && te(), "in" == this.value && $t(), "left" == this.value && ee("-.25", "x"), "right" == this.value && ee(".25", "x"), "up" == this.value && ee("-.25", "y"), "down" == this.value && ee(".25", "y"), setTimeout(function() {
                                         i.value = "-1"
@@ -7103,7 +7103,7 @@ var simplemaps_worldmap_mapinfo = {
                                         var v = f[h];
                                         "out" == v.sm.type || v.sm.inactive || v.sm.hide || p.options.add(new Option(v.sm.name, v.sm.id))
                                     }
-                                    p.onchange = o.callback_closure({
+                                    p.onkeyup = o.callback_closure({
                                         entry: c,
                                         dropdown: p
                                     }, function(t) {
